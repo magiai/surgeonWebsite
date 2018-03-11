@@ -96,11 +96,12 @@
 }
 @media only screen and (max-width: 380px) {
   .aboutDoctor {
-    height: 87vh;
+    height: 90vh;
   }
   @media only screen and (max-width: 330px) {
     .aboutDoctor {
-      height: 100vh;
+      width: 100%;
+      height: auto;
     }
   }
 }

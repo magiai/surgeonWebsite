@@ -172,10 +172,14 @@
   .plus {
     font-size: 18px;
   }
-}
-
-@media only screen and (max-width: 300px) {
-  .aboutService {
-    height: 140vh;
+  .angiologyIcon {
+    margin-top: -15vh;
   }
 }
+
+@media only screen and (max-width: 330px) {
+  .angiologyIcon {
+    display: none;
+  }
+}
+

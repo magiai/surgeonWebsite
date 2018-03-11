@@ -130,3 +130,65 @@
     width: 3vh;
   }
 }
+@media only screen and (max-width: 680px) {
+  .aboutAppointment {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    margin: 0px auto;
+  }
+  .containerAppointment {
+    display: flex;
+    align-content: flex-start;
+    width: 100vw;
+    height: auto;
+  }
+  .imageCabinet {
+    display: none;
+    width: 100vw;
+    height: 75vh;
+  }
+
+  .gallery {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 0vh;
+    box-sizing: border-box;
+  }
+  .visit {
+    width: 100vw;
+    height: auto;
+    margin-top: 5vh;
+  }
+  .visitInfo {
+    height: 30vh;
+    width: 75vw;
+    margin-left: 11vw;
+    line-height: 1.5;
+  }
+  .visitHead {
+    margin-left: 0vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .imageCabinet {
+    height: 45vh;
+  }
+  .gallery {
+    height: 45vh;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .imageCabinet {
+    height: 35vh;
+  }
+  .gallery {
+    height: 35vh;
+  }
+}
