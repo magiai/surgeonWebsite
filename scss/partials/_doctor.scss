@@ -69,3 +69,12 @@
     width: 55vw;
   }
 }
+@media only screen and (max-width: 680px) {
+  .aboutDoctor {
+    flex-direction: column;
+    height: 200vh;
+  }
+  .doctorTextContainer {
+    width: 90vw;
+  }
+}

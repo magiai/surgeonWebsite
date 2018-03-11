@@ -22,6 +22,26 @@ a:visited {
 a:hover {
   font-weight: bold;
 }
+.hamburger {
+  display: none;
+  width: 7vw;
+  height: 9vh;
+  margin-top: 4vh;
+}
+.hamburgerLine {
+  border-top: 3px solid dimgray;
+  margin-bottom: 1.5vh;
+}
+.hiddenMenu {
+  display: none;
+}
+.hiddenMenu div {
+  display: none;
+  @include flexColumnAlignItemsCenter;
+  height: 2vh;
+  width: 30vw;
+  margin-bottom: 1vh;
+}
 .stripe {
   width: 87vw;
   height: 6vh;
@@ -113,7 +133,9 @@ a:hover {
 }
 
 @media only screen and (max-width:1300px) {
-
+  .cabinet {
+    font-size: 25px;
+  }
   .logoImage {
     height: 10vh;
     width: 6vw;
@@ -180,9 +202,17 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 680px) {
+  .hamburger {
+    display: block;
+    height: 7.5vh;
+    width: 8vh;
+    margin-right: 15vw;
+  }
+
   .logo {
-    width: 80vw;
+    width: 100vw;
+    height: 15vh;
   }
   .clock {
     display: none;
