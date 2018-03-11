@@ -72,9 +72,35 @@
 @media only screen and (max-width: 680px) {
   .aboutDoctor {
     flex-direction: column;
-    height: 200vh;
+    height: 70vh;
+    margin-right: 10vw;
+    margin-left: 4vw;
+    width: 100vw;
   }
   .doctorTextContainer {
     width: 90vw;
+    margin-bottom: 5vh;
+    margin-left: 0vw;
+    margin-top: 2vh;
+  }
+  .doctorText {
+    width: 90vw;
+    text-align: center;
+  }
+  .doctorTextHead {
+    font-size: 16px;
+  }
+  .doctorPicture {
+    margin-right: 6vw;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .aboutDoctor {
+    height: 87vh;
+  }
+  @media only screen and (max-width: 330px) {
+    .aboutDoctor {
+      height: 100vh;
+    }
   }
 }
