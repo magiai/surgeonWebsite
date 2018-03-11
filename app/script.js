@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener("click", function (event) {
 
         event.preventDefault();
-        this.nextElementSibling.style.display="block";
+        this.parentElement.nextElementSibling.style.display="block";
     })
 
 });

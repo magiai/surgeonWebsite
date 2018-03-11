@@ -120,3 +120,27 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 620px) {
+  .heroText {
+    margin-top: 0vh;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .hero {
+    height: 20vh;
+    margin-top: 1vh;
+  }
+  .heroTitle {
+    display: none;
+  }
+  .heroName {
+    display: none;
+  }
+  .heroSurgeryText {
+    font-size: 13px;
+  }
+  .smallLogo {
+    width: 4vw;
+    height: 2.5vh;
+  }
+}

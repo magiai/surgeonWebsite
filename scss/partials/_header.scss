@@ -29,19 +29,13 @@ a:hover {
   margin-top: 4vh;
 }
 .hamburgerLine {
-  border-top: 3px solid dimgray;
+  border-top: 2px solid dimgray;
   margin-bottom: 1.5vh;
 }
-.hiddenMenu {
+.hiddenLogoText {
   display: none;
 }
-.hiddenMenu div {
-  display: none;
-  @include flexColumnAlignItemsCenter;
-  height: 2vh;
-  width: 30vw;
-  margin-bottom: 1vh;
-}
+
 .stripe {
   width: 87vw;
   height: 6vh;
@@ -202,14 +196,32 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 680px) {
-  .hamburger {
+@media only screen and (max-width: 650px) {
+
+  .hiddenLogoText {
     display: block;
-    height: 7.5vh;
-    width: 8vh;
-    margin-right: 15vw;
+    width: 60vw;
+    margin-left: 3vw;
+    margin-top: 4vh;
+    text-align: center;
+    font-size: 15px;
   }
 
+  .logo {
+    width: 70vw
+  }
+
+  .logoImage {
+    height: 12vh;
+    width: 7vw;
+  }
+  .logoText {
+    display: none;
+
+  }
+  .cabinet {
+    font-size: 16px;
+  }
   .logo {
     width: 100vw;
     height: 15vh;
@@ -222,5 +234,47 @@ a:hover {
   }
   .localisation {
     display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .logoImage {
+    height: 10vh;
+  }
+}
+@media only screen and (max-width: 420px) {
+  navigation {
+    height: 15vh;
+  }
+  .logoStripe {
+    height: 10vh;
+  }
+  .logoImage {
+    height: 8vh;
+    width: 9vw;
+  }
+  .menuStripe {
+    display: none;
+  }
+    .hamburger {
+      display: block;
+      height: 4vh;
+      width: 5vh;
+      margin-right: 15vw;
+    }
+  .cabinet {
+    font-size: 14px;
+  }
+  .logoText {
+    font-size: 10px;
+    margin-top: 2vh;
+  }
+  .logo {
+    width: 65vw;
+  }
+  .hiddenLogoText {
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+    font-size: 12px;
+    width: 50vw;
   }
 }
