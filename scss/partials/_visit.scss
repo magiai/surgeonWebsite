@@ -1,0 +1,132 @@
+/*************VISIT**************/
+
+.aboutAppointment {
+  @include flexRowJustContCenter;
+  @include mainContainerMargins;
+  height: 70vh;
+}
+.containerAppointment {
+  display: flex;
+  align-content: flex-end;
+  width: 38vw;
+}
+.imageCabinet {
+  display: none;
+  width: 37vw;
+  height: 48vh;
+}
+
+.gallery {
+  width: 38vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 5vh;
+  box-sizing: border-box;
+}
+
+.visit {
+  width: 38vw;
+  height: 50vh;
+  margin-top: 9vh;
+  display: flex;
+  flex-direction: column;
+}
+.visitHead {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 3vh;
+}
+.visitInfo {
+  margin-top: 4vh;
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vw;
+}
+.visitLine {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2vh;
+}
+.visitClock p {
+  font-size: 18px;
+}
+.visitIcon {
+  width: 2vw;
+  height: 4vh;
+  margin-right: 1vw;
+}
+.mailIcon {
+  height: 3vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutAppointment {
+    height: 60vh;
+  }
+  .imageCabinet {
+    width: 37vw;
+    height: 40vh;
+  }
+  .visit {
+    height: 40vh;
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .imageCabinet {
+    height: 33vh;
+  }
+  .visit {
+    height: 35vh;
+    margin-top: 4vh;
+  }
+  .visitHead {
+    margin-bottom: 2vh;
+  }
+  .visitInfo {
+    margin-left: 5vw;
+    margin-top: 2vh;
+  }
+  .visitIcon {
+    height: 3vh;
+  }
+}
+
+@media only screen and (max-width:812px) {
+  .aboutAppointment {
+    height: 70vh;
+  }
+  .imageCabinet {
+    width: 35vw;
+    height: 50vh;
+  }
+  .visitHead {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+    margin-left: 4vw;
+      }
+  .visitInfo {
+    margin-top: 2vh;
+    height: 70vh;
+    width: 30vw;
+    margin-left: 8vw;
+  }
+  .visitLine {
+    font-size: 12px;
+    margin-bottom: 1.5vh;
+  }
+  .visit {
+    height: 70vh;
+  }
+  .visitIcon {
+    width: 3vh;
+  }
+}

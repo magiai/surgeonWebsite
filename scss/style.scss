@@ -1,0 +1,19 @@
+@import "partials/_mixins.scss";
+@import "partials/_header.scss";
+@import "partials/_hero.scss";
+@import "partials/_doctor.scss";
+@import "partials/_service.scss";
+@import "partials/_visit.scss";
+@import "partials/_credits.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid grey;*/
+    font-family: Montserrat, sans-serif;
+    color: dimgrey;
+    box-sizing: border-box;
+}
+.mainContainer {
+    overflow: hidden;
+}

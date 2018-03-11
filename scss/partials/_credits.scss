@@ -1,0 +1,27 @@
+/*********CREDITS************/
+.credits {
+  width: 100vw;
+  height: 10vh;
+  @include flexColumnJustContCenter;
+  align-items: center;
+  border-top: 1px solid silver;
+}
+.copyrights {
+  margin-top: 3vh;
+}
+.credits2 {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 812px) {
+  .credits {
+    height: 15vh;
+    font-size: 14px;
+    margin-top: 2vh;
+  }
+  .credits2 {
+    font-size: 12px;
+  }
+}

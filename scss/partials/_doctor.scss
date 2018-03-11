@@ -1,0 +1,71 @@
+/*************DOCTOR**************/
+.aboutDoctor {
+  display: flex;
+  flex-direction: row;
+  @include mainContainerMargins;
+  height: 50vh;
+}
+
+.doctorTextContainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 40vw;
+  margin-right: 5vw;
+}
+.doctorText {
+  line-height: 2;
+  font-size: 16px;
+}
+
+.doctorTextHead {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 1.5vh;
+  text-align: left;
+}
+.doctorPictureContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doctorPicture {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 340px;
+  height: 360px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .doctorTextHead {
+    font-size: 20px;
+  }
+  .doctorText {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  .aboutDoctor {
+    height: 90vh;
+    margin-left: 10vw;
+    margin-right: 5vw;
+  }
+  .doctorPicture {
+    width: 240px;
+    height: 250px;
+  }
+  .doctorTextHead {
+    font-size: 18px;
+  }
+  .doctorText {
+    font-size: 12px;
+    width: 55vw;
+  }
+}

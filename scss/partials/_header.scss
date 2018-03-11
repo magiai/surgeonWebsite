@@ -1,0 +1,196 @@
+header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  overflow: hidden;
+}
+
+navigation {
+  display: flex;
+  flex-direction: column;
+  height: 21vh;
+  width: 100vw;
+  background-color: white;
+  overflow: hidden;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
+.stripe {
+  width: 87vw;
+  height: 6vh;
+  font-size: 24px;
+  margin-top: 0.5vh;
+  margin-right: 12vw;
+  font-weight: 200;
+  border-bottom: 1px solid silver;
+}
+.stripeText {
+  margin-left: 3vw;
+}
+
+.logoStripe {
+  height: 15vh;
+  width: 100vw;
+  margin-left: 14vw;
+  margin-right: 12vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  padding-top: 1vh;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  width: 32vw;
+}
+.logoImage {
+  height: 13vh;
+  width: 6vw;
+}
+.logoText {
+  width: 20vw;
+  margin-top: 3vh;
+  text-align: center;
+}
+.cabinet {
+  font-size: 34px;
+}
+.infoIcon {
+  display: flex;
+  align-items: center;
+  width: 3.5vw;
+  height: 7vh;
+}
+.iconsText {
+  text-align: center;
+  font-size: 14px;
+  margin-left: 0.5vw;
+}
+/*clock*/
+.clock {
+  width: 16vw;
+  @include flexRowAlignItemsCenter;
+}
+.smallLetters {
+  font-size: 12px;
+}
+.phone {
+  width: 14vw;
+  @include flexRowAlignItemsCenter;
+}
+.localisation {
+  width: 14vw;
+  @include flexRowAlignItemsCenter;
+}
+.menuStripe {
+  height: 6vh;
+  width: 100vw;
+  border-top: 1px solid silver;
+}
+.navigationList {
+  margin-left: 14vw;
+}
+
+.navigationList li {
+  display: inline-block;
+  margin-top: 1.5vh;
+  margin-right: 3vw;
+}
+
+@media only screen and (max-width:1350px) {
+  .infoIcon {
+    height: 6vh;
+  }
+}
+
+@media only screen and (max-width:1300px) {
+
+  .logoImage {
+    height: 10vh;
+    width: 6vw;
+    margin-top: 1vh;
+  }
+  .infoIcon {
+    width: 3.5vw;
+    height: 5.5vh;
+  }
+}
+@media only screen and (max-width:812px) {
+  navigation {
+    height: 23vh;
+  }
+  .cabinet {
+    font-size: 14px;
+  }
+  .logoText {
+    font-size: 13px;
+  }
+  .logoImage {
+    height: 9vh;
+    width: 4vw;
+    margin-top: 2vh;
+  }
+  .logoStripe {
+    margin-right: 6vw;
+  }
+  .infoIcon {
+    width: 3.5vw;
+    height: 7.5vh;
+  }
+  .iconsText {
+    text-align: center;
+    font-size: 10px;
+    margin-left: 0.5vw;
+  }
+  /*clock*/
+  .clock {
+    width: 16vw;
+  }
+  .smallLetters {
+    font-size: 10px;
+  }
+  .localisation {
+    margin-left: 1.5vw;
+  }
+  .stripe {
+    width: 100vw;
+    height: 8vh;
+    font-size: 16px;
+    margin-top: 7vh;
+    margin-right: 12vw;
+    font-weight: 200;
+    border-bottom: 1px solid silver;
+  }
+  .stripeText {
+    margin-left: 2vw;
+  }
+  .navigationList {
+    font-size: 13px;
+    margin-top: 1vh;
+
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .logo {
+    width: 80vw;
+  }
+  .clock {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  .localisation {
+    display: none;
+  }
+}

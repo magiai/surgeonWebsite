@@ -1,0 +1,122 @@
+/*****************HERO***************************/
+.hero {
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.mainPicture {
+  margin-left: 14vw;
+  width: 34vw;
+  background-image: url("../images/cabinetbackground.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 2vh;
+}
+.mainDescription {
+  margin-right: 12vw;
+  width: 45vw;
+  @include flexColumnAlignItemsCenter;
+  justify-content: center;
+
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 55vh;
+  margin-top: 7vh;
+}
+.heroText p {
+  margin-bottom: 1vh;
+  text-align: center;
+}
+.heroTitle {
+  font-size: 60px;
+  margin-bottom: 2vh;
+}
+.heroSubtitle {
+  font-size: 45px;
+}
+.heroName {
+  font-size: 35px;
+}
+.heroSurgeryText {
+  font-size: 30px;
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+}
+.surgeryText {
+  @include flexColumnAlignItemsCenter;
+  margin-top: 5vh;
+  text-align: center;
+
+}
+.heroSurgery {
+  @include flexRowJustContCenter;
+  align-content: center;
+  margin-top: 1.5vh;
+}
+
+@media only screen and (max-width:1300px) {
+  .hero {
+    height: 55vh;
+  }
+  .heroText {
+    margin-left: 3vh;
+  }
+  .heroTitle {
+    font-size: 45px;
+  }
+  .smallLogo {
+    height: 4.5vh;
+    width: 3vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .surgeryText {
+    margin-top: 3vh;
+  }
+}
+
+@media only screen and (max-width:812px) {
+  .hero {
+    height: 70vh;
+    margin-top: 5vh;
+  }
+  .heroText {
+    margin-top: 3vh;
+    margin-left: 7vw;
+  }
+  .surgeryText {
+    margin-top: 1.5vh;
+  }
+  .heroTitle {
+    font-size: 35px;
+    margin-bottom: 2vh;
+  }
+  .heroName {
+    font-size: 25px;
+  }
+  .heroSurgeryText {
+    font-size: 17px;
+    margin-left: 1vw;
+  }
+  .smallLogo {
+    height: 6.5vh;
+  }
+}
+@media only screen and (max-width:750px) {
+  .heroText {
+    margin-top: 11vh;
+  }
+  .heroTitle {
+    font-size: 22px;
+  }
+  .heroName {
+    font-size: 18px;
+  }
+}

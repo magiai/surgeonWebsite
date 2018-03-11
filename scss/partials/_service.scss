@@ -1,0 +1,108 @@
+/*************SERVICE**************/
+.aboutService {
+  @include flexRowJustContCenter;
+  @include mainContainerMargins;
+  height: 70vh;
+  background-color: rgb(184, 202, 211);
+}
+.containerService {
+  @include flexColumnAlignItemsCenter;
+  align-content: flex-start;
+  justify-content: center;
+  justify-items: flex-start;
+  width: 38vw;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+.screenIcon {
+  width: 7vw;
+  height: 13.5vh;
+  margin-bottom: 3vh;
+  margin-top: -4vh;
+}
+.serviceTitle {
+  text-align: center;
+  margin-bottom: 1.5vh;
+
+  /*color: #8ea8bb;*/
+  font-weight: 600;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  font-size: 20px;
+
+}
+.surgery {
+  width: 35vw;
+  height: 35vh;
+  margin-bottom: 9vh;
+  font-weight: 550;
+}
+.angiology {
+  width: 35vw;
+  height: 35vh;
+  margin-bottom: 9vh;
+  text-align: left;
+  font-weight: 550;
+}
+.serviceList {
+  margin-top: 2vh;
+  text-align: left;
+}
+.serviceList li {
+  list-style: none;
+  text-align: center;
+  line-height: 1.7;
+}
+.plus {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media only screen and (max-width:1200px) {
+
+  .screenIcon {
+    width: 6vw;
+    height: 10vh;
+    margin-top: -6vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .screenIcon {
+    height: 8vh;
+    margin-top: -11vh;
+    margin-bottom: 1.5vh;
+  }
+}
+@media only screen and (max-width:812px) {
+  .aboutService {
+    height: 155vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .containerService {
+    border-style: none;
+  }
+  .screenIcon {
+    margin-top: -75vh;
+    margin-bottom: 1vh;
+    height: 17vh;
+    width: 8vw;
+  }
+  .surgery {
+    margin-top: 1vh;
+
+  }
+  .angiology {
+    margin-top: 1vh;
+
+  }
+}
+//  .containerService {
+//    width: 70vw;
+//    height: 100vh;
+//  }
+//}
