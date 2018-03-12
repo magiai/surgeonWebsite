@@ -119,7 +119,7 @@
     justify-items: center;
     align-content: center;
     justify-content: center;
-    height: 70vh;
+    height: 55vh;
     margin-top: 0px;
   }
   .screenIconSurgery {
@@ -159,6 +159,15 @@
     line-height: 1.6;
   }
 }
+@media only screen and (max-height: 450px) and (max-width: 800px) {
+
+  .serviceList li {
+    font-size: 13px;
+  }
+  .serviceTitle {
+    font-size: 15px;
+  }
+}
 @media only screen and (max-width: 410px) {
   .serviceList li {
     font-size: 12px;
@@ -177,9 +186,21 @@
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 360px) {
   .angiologyIcon {
     display: none;
   }
+  .containerService {
+    height: 50vh;
+  }
+  .aboutService {
+    height: 153vh;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .containerService {
+    height: 63vh;
+  }
+
 }
 
