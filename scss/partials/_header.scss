@@ -5,7 +5,7 @@ header {
   overflow: hidden;
 }
 
-navigation {
+nav {
   display: flex;
   flex-direction: column;
   height: 21vh;
@@ -141,7 +141,7 @@ a:hover {
   }
 }
 @media only screen and (max-width:812px) {
-  navigation {
+  nav {
     height: 23vh;
   }
   .cabinet {
@@ -243,7 +243,7 @@ a:hover {
   }
 }
 @media only screen and (max-width: 420px) {
-  navigation {
+  nav {
     height: 15vh;
   }
   .logoStripe {

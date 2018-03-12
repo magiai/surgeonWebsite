@@ -8,12 +8,13 @@
     <script src="app/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-<!---------------------------------------- HEADER --------------------------------------------------------------->
+<body>
+<!---------------------------------------- HEADER --------------------------------------------------------------------->
     <header>
-        <navigation>
+        <nav>
 
             <!---------------------- logo with title --------------------------->
+
             <article class = "logoStripe">
                 <div class = "logo">
                     <img class = "logoImage" src = "images/sign.png">
@@ -22,19 +23,25 @@
                 </div>
 
                 <!------------------ information icons ------------------------->
-                <!------ hours ----------->
+
+                <!------ hours ---------------->
+
                 <div class = "clock">
                     <img class = "infoIcon" src = "images/clock.png">
                     <div class = "clockText iconsText">
                         <p>pon-piątek <br> <span class = "smallLetters">przyjęcia po umówieniu</span></p>
                     </div>
                 </div>
+
                 <!------ phone number --------->
+
                 <div class = "phone">
                     <img class = "infoIcon" src = "images/phone.png">
                     <div class = "phoneText iconsText">+48 796 992 157</div>
                 </div>
+
                 <!------- address -------------->
+
                 <div class = "localisation">
 
                         <img class = "infoIcon" src = "images/localisation.png">
@@ -46,7 +53,8 @@
                         </div>
                 </div>
 
-                <!-------------- hidden menu ----------------->
+                <!-------------- hidden menu ---------------------------------->
+
                 <div class = "hamburger">
                     <div class = "hamburgerLine"></div>
                     <div class = "hamburgerLine"></div>
@@ -55,9 +63,7 @@
 
             </article>
 
-
-
-            <!-------------------- second menu stripe ------------------>
+            <!----------------- second menu stripe --------------------------------->
 
            <article class = "menuStripe">
                <ul class = "navigationList">
@@ -68,23 +74,24 @@
                </ul>
            </article>
 
-       </navigation>
+       </nav>
    </header>
 
-<!---------------------------------- MAIN SECTION ---------------------------------------->
-<div class = "mainContainer">
+<!---------------------------------- MAIN SECTION --------------------------------------------------------------------->
+<main class = "mainContainer">
 
     <section id ="home">
         <article class = "hero">
 
             <!----------------------------- hero picture -------------------------->
+
             <div class = "mainPicture"></div>
 
             <!----------------------------- hero description ---------------------->
+
             <div class = "mainDescription">
                 <div class = "heroText">
                     <p> <span class = "heroTitle">Gabinet Lekarski</span></p>
-                    <!--<p> <span class = "heroSubtitle">specjalisty chirurgii</span></p>-->
                     <p> <span class = "heroName">Jarosława Siemaszko</span></p>
 
                     <!-------------------- icons with text ------------------------>
@@ -99,18 +106,20 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </article>
     </section>
 
-    <!----------------------------------- DOCTOR SECTION ----------------------------->
+    <!----------------------------------- DOCTOR SECTION -------------------------------------------------------------->
 
     <section id = "doctor">
+
         <!------------------------- section stripe ----------------------------->
         <article class = "stripe"><p class = "stripeText">LEKARZ</p></article>
 
-<!-------------------------------------- doctor's description ------------------------->
+        <!----------------------- doctor's description ------------------------->
+
         <article class = "aboutDoctor">
             <div class = "doctorTextContainer">
                 <p class = "doctorText">
@@ -126,25 +135,30 @@
                     dyplom specjalisty w dziedzinie angiologii.
                 </p>
             </div>
-<!-------------------------------------- doctor's picture ------------------------------->
+
+        <!----------------------- doctor's picture ------------------------------->
             <div class = "doctorPictureContainer">
                 <img class = "doctorPicture" src="images/kolosrednie.png">
             </div>
         </article>
     </section>
 
-<!------------------------------------- SERVICE SECTION --------------------------------->
+<!------------------------------------- SERVICE SECTION --------------------------------------------------------------->
     <section id = "service">
+
         <!------------------------- section stripe ----------------------------->
         <article class = "stripe"><p class = "stripeText">USŁUGI</p></article>
 
         <!------------------------- service description------------------------->
-        <article class = "aboutService">
+        <div class = "aboutService">
 
-            <!--------------------- chirurgia ogolna description ------------------->
-            <div class = "containerService">
+            <!----------------- chirurgia ogolna description ------------------->
+            <article class = "containerService">
+
                 <!-------- chirurgia ogolna icon -------------->
+
                 <img class = "screenIconSurgery screenIcon" src="images/visit.png">
+
                 <!-------- chirurgia ogolna text -------------->
                 <div class="surgery">
                     <div class = "serviceTitle">CHIRURGIA OGÓLNA</div>
@@ -160,13 +174,18 @@
                         <li><span class = "plus">+</span> diagnostyka i leczenie przyczyn owrzodzeń kończyn dolnych</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
-            <!--------------------- angiologia description ------------------->
-            <div class = " containerService">
+            <!--------------------- angiologia description --------------------->
+
+            <article class = " containerService">
+
                 <!-------- angiologia icon -------------->
+
                 <img class = "angiologyIcon screenIcon" src="images/screen.png">
+
                 <!-------- angiologia text -------------->
+
                 <div class = "angiology">
                     <div class = "serviceTitle">ANGIOLOGIA</div>
                     <ul class = "angiologyServiceList serviceList">
@@ -179,32 +198,35 @@
                         <li><span class = "plus">+</span> diagnostyka bólów kończyn dolnych</li>
                         <li><span class = "plus">+</span> diagnostyka i leczenie obrzęków kończyn dolnych
                     </ul>
-
                 </div>
-            </div>
-        </article>
+
+            </article>
+
+        </div>
     </section>
 
-<!--------------------------------------- APPOINTMENT SECTION --------------------------------------------->
+<!--------------------------------------- APPOINTMENT SECTION --------------------------------------------------------->
     <section id = "appointment">
         <!------------------------- section stripe ----------------------------->
         <article class = "stripe"><p class = "stripeText">WIZYTA</p></article>
 
         <article class = "aboutAppointment">
 
-            <!---------------------------- gallery --------------------------->
+            <!---------------------------- gallery ----------------------------->
+
             <div class = "containerAppointment">
 
-                <div class = "gallery">
+                <article class = "gallery">
 
                     <img class = "imageCabinet" src="images/1.jpg">
                     <img class = "imageCabinet" src="images/2.jpg">
                     <img class = "imageCabinet" src="images/4.jpg">
-                </div>
+                </article>
 
             </div>
 
-            <!---------------------- appointment information ----------------->
+            <!---------------------- appointment information ------------------->
+
             <div class = "containerAppointment">
                 <article class = "visit">
                     <div class = "visitHead"><p>Zapraszamy na wizytę po wcześniejszym umówieniu</p></div>
@@ -248,7 +270,7 @@
         </div>
     </footer>
 
-</div>
+</main>
 
 </body>
 </html>
