@@ -22,20 +22,7 @@ a:visited {
 a:hover {
   font-weight: bold;
 }
-.hamburger {
-  display: none;
-  width: 7vw;
-  height: 9vh;
-  margin-top: 4vh;
-}
-.hamburgerLine {
-  border-top: 2px solid dimgray;
-  margin-bottom: 1.5vh;
-}
-.hiddenLogoText {
-  display: none;
-}
-
+/************** stripe ******************/
 .stripe {
   width: 87vw;
   height: 6vh;
@@ -48,7 +35,7 @@ a:hover {
 .stripeText {
   margin-left: 3vw;
 }
-
+/*********** logo with title ****************/
 .logoStripe {
   height: 15vh;
   width: 100vw;
@@ -78,6 +65,7 @@ a:hover {
 .cabinet {
   font-size: 34px;
 }
+/**************** information icons *************/
 .infoIcon {
   display: flex;
   align-items: center;
@@ -89,13 +77,12 @@ a:hover {
   font-size: 14px;
   margin-left: 0.5vw;
 }
-/*clock*/
+.smallLetters {
+  font-size: 12px;
+}
 .clock {
   width: 16vw;
   @include flexRowAlignItemsCenter;
-}
-.smallLetters {
-  font-size: 12px;
 }
 .phone {
   width: 14vw;
@@ -105,6 +92,21 @@ a:hover {
   width: 14vw;
   @include flexRowAlignItemsCenter;
 }
+/************ hidden menu ***************/
+.hamburger {
+  display: none;
+  width: 7vw;
+  height: 9vh;
+  margin-top: 4vh;
+}
+.hamburgerLine {
+  border-top: 2px solid dimgray;
+  margin-bottom: 1.5vh;
+}
+.hiddenLogoText {
+  display: none;
+}
+/************* second menu stripe  **********/
 .menuStripe {
   height: 6vh;
   width: 100vw;
@@ -120,12 +122,14 @@ a:hover {
   margin-right: 3vw;
 }
 
+/************ media width: 1350px *************/
 @media only screen and (max-width:1350px) {
   .infoIcon {
     height: 6vh;
   }
 }
 
+/************ media width: 1300px *************/
 @media only screen and (max-width:1300px) {
   .cabinet {
     font-size: 25px;
@@ -140,43 +144,9 @@ a:hover {
     height: 5.5vh;
   }
 }
+
+/************ media width: 812px *************/
 @media only screen and (max-width:812px) {
-  nav {
-    height: 23vh;
-  }
-  .cabinet {
-    font-size: 14px;
-  }
-  .logoText {
-    font-size: 13px;
-  }
-  .logoImage {
-    height: 9vh;
-    width: 4vw;
-    margin-top: 2vh;
-  }
-  .logoStripe {
-    margin-right: 6vw;
-  }
-  .infoIcon {
-    width: 3.5vw;
-    height: 7.5vh;
-  }
-  .iconsText {
-    text-align: center;
-    font-size: 10px;
-    margin-left: 0.5vw;
-  }
-  /*clock*/
-  .clock {
-    width: 16vw;
-  }
-  .smallLetters {
-    font-size: 10px;
-  }
-  .localisation {
-    margin-left: 1.5vw;
-  }
   .stripe {
     width: 100vw;
     height: 5vh;
@@ -190,15 +160,55 @@ a:hover {
     margin-left: 2vw;
     margin-bottom: 1vh;
   }
+  nav {
+    height: 23vh;
+  }
   .navigationList {
     font-size: 13px;
     margin-top: 1vh;
 
   }
+  /**** logo and title ****/
+  .logoStripe {
+    margin-right: 6vw;
+  }
+  .cabinet {
+    font-size: 14px;
+  }
+  .logoText {
+    font-size: 13px;
+  }
+  .logoImage {
+    height: 9vh;
+    width: 4vw;
+    margin-top: 2vh;
+  }
+  /**** info icons ********/
+  .infoIcon {
+    width: 3.5vw;
+    height: 7.5vh;
+  }
+  .iconsText {
+    text-align: center;
+    font-size: 10px;
+    margin-left: 0.5vw;
+  }
+  .smallLetters {
+    font-size: 10px;
+  }
+  .clock {
+    width: 16vw;
+  }
+  .localisation {
+    margin-left: 1.5vw;
+  }
 }
 
+
+/************ media width: 650px *************/
 @media only screen and (max-width: 650px) {
 
+  /**** logo and title *****/
   .hiddenLogoText {
     display: block;
     width: 60vw;
@@ -207,18 +217,12 @@ a:hover {
     text-align: center;
     font-size: 15px;
   }
-
-  .logo {
-    width: 70vw
-  }
-
   .logoImage {
     height: 12vh;
     width: 7vw;
   }
   .logoText {
     display: none;
-
   }
   .cabinet {
     font-size: 16px;
@@ -227,6 +231,7 @@ a:hover {
     width: 100vw;
     height: 15vh;
   }
+  /****** info icons ******/
   .clock {
     display: none;
   }
@@ -237,6 +242,8 @@ a:hover {
     display: none;
   }
 }
+
+/************ media width: 500px *************/
 @media only screen and (max-width: 500px) {
   .logoImage {
     height: 10vh;
