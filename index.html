@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="app/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<div>
-
-
+<!---------------------------------------- HEADER --------------------------------------------------------------->
     <header>
         <navigation>
+
+            <!---------------------- logo with title --------------------------->
             <article class = "logoStripe">
                 <div class = "logo">
                     <img class = "logoImage" src = "images/sign.png">
@@ -21,29 +21,44 @@
                     <div class = "hiddenLogoText"><span class = "cabinet">Gabinet Lekarski</span> - Jarosław Siemaszko</div>
                 </div>
 
+                <!------------------ information icons ------------------------->
+                <!------ hours ----------->
                 <div class = "clock">
                     <img class = "infoIcon" src = "images/clock.png">
                     <div class = "clockText iconsText">
                         <p>pon-piątek <br> <span class = "smallLetters">przyjęcia po umówieniu</span></p>
                     </div>
                 </div>
+                <!------ phone number --------->
                 <div class = "phone">
                     <img class = "infoIcon" src = "images/phone.png">
                     <div class = "phoneText iconsText">+48 796 992 157</div>
                 </div>
+                <!------- address -------------->
                 <div class = "localisation">
-                    <a href="https://www.google.pl/maps/place/Gda%C5%84ska+164,+85-674+Bydgoszcz/data=!4m2!3m1!1s0x470313dd216dbd65:0x1a7e4f7403e9e377?sa=X&ved=0ahUKEwif34TSkt3ZAhVOyKQKHX53B8wQ8gEIKDAA" target="_blank">
+
                         <img class = "infoIcon" src = "images/localisation.png">
                         <div class = "localisationText iconsText">
-                            ul.Gdańska 164/2, <br>85-674 Bydgoszcz</a></div>
+                            <a href="https://www.google.pl/maps/place/Gda%C5%84ska+164,
+                    +85-674+Bydgoszcz/data=!4m2!3m1!1s0x470313dd216dbd65:0x1a7e4f7403e9e377?sa=
+                    X&ved=0ahUKEwif34TSkt3ZAhVOyKQKHX53B8wQ8gEIKDAA" target="_blank">
+                            ul.Gdańska 164/2, <br>85-674 Bydgoszcz</a>
                         </div>
+                </div>
+
+                <!-------------- hidden menu ----------------->
                 <div class = "hamburger">
                     <div class = "hamburgerLine"></div>
                     <div class = "hamburgerLine"></div>
                     <div class = "hamburgerLine"></div>
                 </div>
 
-           </article>
+            </article>
+
+
+
+            <!-------------------- second menu stripe ------------------>
+
            <article class = "menuStripe">
                <ul class = "navigationList">
                    <li><a href="#home"> STRONA GŁÓWNA </a></li>
@@ -56,16 +71,23 @@
        </navigation>
    </header>
 
+<!---------------------------------- MAIN SECTION ---------------------------------------->
 <div class = "mainContainer">
 
     <section id ="home">
         <article class = "hero">
+
+            <!----------------------------- hero picture -------------------------->
             <div class = "mainPicture"></div>
+
+            <!----------------------------- hero description ---------------------->
             <div class = "mainDescription">
                 <div class = "heroText">
                     <p> <span class = "heroTitle">Gabinet Lekarski</span></p>
                     <!--<p> <span class = "heroSubtitle">specjalisty chirurgii</span></p>-->
                     <p> <span class = "heroName">Jarosława Siemaszko</span></p>
+
+                    <!-------------------- icons with text ------------------------>
                     <div class = "surgeryText">
                         <div class = "heroSurgery">
                             <img class = "smallLogo infoIcon" src="images/smalllogo.png">
@@ -82,10 +104,14 @@
         </article>
     </section>
 
-    <section id = "doctor">
-        <article class = "stripe"><p class = "stripeText">LEKARZ</p></article>
-        <article class = "aboutDoctor">
+    <!----------------------------------- DOCTOR SECTION ----------------------------->
 
+    <section id = "doctor">
+        <!------------------------- section stripe ----------------------------->
+        <article class = "stripe"><p class = "stripeText">LEKARZ</p></article>
+
+<!-------------------------------------- doctor's description ------------------------->
+        <article class = "aboutDoctor">
             <div class = "doctorTextContainer">
                 <p class = "doctorText">
                     <span class = "doctorTextHead">Jarosław Siemaszko</span>
@@ -100,17 +126,26 @@
                     dyplom specjalisty w dziedzinie angiologii.
                 </p>
             </div>
-
+<!-------------------------------------- doctor's picture ------------------------------->
             <div class = "doctorPictureContainer">
                 <img class = "doctorPicture" src="images/kolosrednie.png">
             </div>
         </article>
     </section>
+
+<!------------------------------------- SERVICE SECTION --------------------------------->
     <section id = "service">
+        <!------------------------- section stripe ----------------------------->
         <article class = "stripe"><p class = "stripeText">USŁUGI</p></article>
+
+        <!------------------------- service description------------------------->
         <article class = "aboutService">
+
+            <!--------------------- chirurgia ogolna description ------------------->
             <div class = "containerService">
+                <!-------- chirurgia ogolna icon -------------->
                 <img class = "screenIconSurgery screenIcon" src="images/visit.png">
+                <!-------- chirurgia ogolna text -------------->
                 <div class="surgery">
                     <div class = "serviceTitle">CHIRURGIA OGÓLNA</div>
                     <ul class = "serviceList">
@@ -126,11 +161,15 @@
                     </ul>
                 </div>
             </div>
+
+            <!--------------------- angiologia description ------------------->
             <div class = " containerService">
+                <!-------- angiologia icon -------------->
                 <img class = "angiologyIcon screenIcon" src="images/screen.png">
+                <!-------- angiologia text -------------->
                 <div class = "angiology">
                     <div class = "serviceTitle">ANGIOLOGIA</div>
-                    <ul class = "serviceList">
+                    <ul class = "angiologyServiceList serviceList">
                         <li><span class = "plus">+</span> konsultacje w zakresie chorób naczyń</li>
                         <li><span class = "plus">+</span> diagnostyka i leczenie chorób żył, żylaków, pajęczaków naczyniowych</li>
                         <li><span class = "plus">+</span> sklerotopia pajęczaków, żylaków</li>
@@ -143,11 +182,17 @@
 
                 </div>
             </div>
+        </article>
     </section>
+
+<!--------------------------------------- APPOINTMENT SECTION --------------------------------------------->
     <section id = "appointment">
+        <!------------------------- section stripe ----------------------------->
         <article class = "stripe"><p class = "stripeText">WIZYTA</p></article>
+
         <article class = "aboutAppointment">
 
+            <!---------------------------- gallery --------------------------->
             <div class = "containerAppointment">
 
                 <div class = "gallery">
@@ -158,38 +203,43 @@
                 </div>
 
             </div>
+
+            <!---------------------- appointment information ----------------->
             <div class = "containerAppointment">
                 <article class = "visit">
                     <div class = "visitHead"><p>Zapraszamy na wizytę po wcześniejszym umówieniu</p></div>
                     <div class = "visitInfo">
+                        <!------------ hours ------------->
                         <div class = "visitLine">
                             <img class = "visitIcon" src="images/clock.png">
                             <p>poniedziałek-piątek: 9:00 - 17:00</p>
                         </div>
+                        <!------------ address ------------->
                         <div class = "visitLine">
                             <img class = "visitIcon" src="images/localisation.png">
                             <a href="https://www.google.pl/maps/place/Gda%C5%84ska+164,+85-674+Bydgoszcz/data=!4m2!3m1!1s0x470313dd216dbd65:0x1a7e4f7403e9e377?sa=X&ved=0ahUKEwif34TSkt3ZAhVOyKQKHX53B8wQ8gEIKDAA" target="_blank">
                                 <p>ul.Gdańska 164/2, 85-674 Bydgoszcz</p></a>
                         </div>
+                        <!------------ phone number ------------->
                         <div class = "visitLine">
                             <img class = "visitIcon" src="images/phone.png">
                             <p>+48 796 992 157</p>
                         </div>
+                        <!------------ e-mail ------------->
                         <div class = "visitLine">
                             <img class = "visitIcon mailIcon" src="images/mail.png">
                             <p>gabinet.siemaszko@gmail.com</p>
                         </div>
 
-
-
                         <div></div>
                     </div>
                 </article>
             </div>
+
         </article>
     </section>
 
-
+<!--------------------------------------- FOOTER --------------------------------------------------->
     <footer>
 
         <div class = "credits">

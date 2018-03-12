@@ -179,10 +179,10 @@ a:hover {
   }
   .stripe {
     width: 100vw;
-    height: 8vh;
+    height: 5vh;
     font-size: 16px;
-    margin-top: 7vh;
-    margin-right: 12vw;
+    margin-top: 4vh;
+    margin-right: 6vw;
     font-weight: 200;
     border-bottom: 1px solid silver;
   }
@@ -247,6 +247,8 @@ a:hover {
   }
   .logoStripe {
     height: 10vh;
+    width: 70vw;
+    margin-right: 0vw;
   }
   .logoImage {
     height: 8vh;
@@ -255,12 +257,19 @@ a:hover {
   .menuStripe {
     display: none;
   }
-    .hamburger {
+  .hamburger {
       display: block;
-      height: 4vh;
-      width: 5vh;
-      margin-right: 15vw;
-    }
+      height: 2vh;
+      width: 6vw;
+      margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+    margin-top: 4vh;
+  }
+  .hamburgerLine {
+    width: 6vw;
+    margin-bottom: 1vh;
+  }
   .cabinet {
     font-size: 14px;
   }
@@ -275,6 +284,6 @@ a:hover {
     margin-top: 2.5vh;
     margin-left: 1vw;
     font-size: 12px;
-    width: 50vw;
+    width: 48vw;
   }
 }
