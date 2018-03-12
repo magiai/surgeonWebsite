@@ -258,6 +258,9 @@ a:hover {
   .menuStripe {
     display: none;
   }
+  .menuStripe li {
+    font-size: 10px;
+  }
   .hamburger {
       display: block;
       height: 2vh;

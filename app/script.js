@@ -19,11 +19,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     var hamburger = document.querySelector('.hamburger');
+    var show = document.querySelector('.menuStripe');
 
     hamburger.addEventListener("click", function (event) {
 
+    if (show.style.display === "none") {
+
         event.preventDefault();
-        this.parentElement.nextElementSibling.style.display= "block";
+        show.style.display = "block";
+
+    } else {
+
+        event.preventDefault();
+        show.style.display = "none";
+        }
     })
 
 });
