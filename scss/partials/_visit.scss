@@ -174,7 +174,54 @@
     margin-left: 0vw;
   }
 }
+@media only screen and (max-height: 350px) and (max-width: 600px) {
+  .aboutAppointment {
+    @include flexColumnJustContCenter;
+    justify-items: center;
+    width: 100vw;
+    height: auto;
+    margin: 0px auto;
+  }
+  .containerAppointment {
+    @include flexColumnJustContCenter;
+    justify-items: center;
+    align-content: center;
+    width: 100vw;
+    height: auto;
+  }
+  .imageCabinet {
+    display: none;
+    width: 50vw;
+    height: 70vh;
+  }
 
+  .gallery {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 0vh;
+    margin-left: 25vw;
+    box-sizing: border-box;
+  }
+  .visit {
+    width: 100vw;
+    height: auto;
+    margin-top: 5vh;
+  }
+  .visitInfo {
+    height: 30vh;
+    width: 75vw;
+    margin-left: 25vw;
+    margin-bottom: 7vh;
+    line-height: 1.5;
+  }
+  .visitHead {
+    margin-left: 0vw;
+    margin-top: 2vh;
+  }
+}
 @media only screen and (max-width: 500px) {
   .imageCabinet {
     height: 45vh;

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    var hamburger = document.getElementsByClassName("hamburger");
+    var hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener("click", function (event) {
 

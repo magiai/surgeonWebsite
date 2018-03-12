@@ -188,7 +188,31 @@
     margin-top: -15vh;
   }
 }
-
+@media only screen and (max-height: 350px) and (max-width: 600px) {
+  .aboutService {
+    width: 100vw;
+    height: 150vh;
+    margin: 0px auto;
+  }
+  .containerService {
+    margin: 0px auto;
+    margin-top: 5vh;
+    width: 45vw;
+    height: 147vh;
+  }
+  .surgery {
+    width: 42vw;
+  }
+  .angiology {
+    width: 42vw;
+  }
+  .serviceList li {
+    font-size: 11px;
+  }
+  .plus {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 360px) {
   .angiologyIcon {
     display: none;

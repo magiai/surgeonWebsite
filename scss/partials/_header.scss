@@ -188,6 +188,7 @@ a:hover {
   }
   .stripeText {
     margin-left: 2vw;
+    margin-bottom: 1vh;
   }
   .navigationList {
     font-size: 13px;
@@ -270,6 +271,11 @@ a:hover {
     width: 6vw;
     margin-bottom: 1vh;
   }
+  .hamburger:hover {
+    .menuStripe {
+      display: block;
+    }
+  }
   .cabinet {
     font-size: 14px;
   }
@@ -285,5 +291,12 @@ a:hover {
     margin-left: 1vw;
     font-size: 12px;
     width: 48vw;
+  }
+}
+
+@media only screen and (max-height: 350px) and (max-width: 600px) {
+  .stripe {
+    height: 10vh;
+    margin-top: 2vh;
   }
 }
