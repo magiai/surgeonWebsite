@@ -257,6 +257,7 @@ a:hover {
   }
   .menuStripe {
     display: none;
+    border-style: none;
   }
   .menuStripe li {
     font-size: 10px;
@@ -294,6 +295,12 @@ a:hover {
     margin-left: 1vw;
     font-size: 12px;
     width: 48vw;
+  }
+}
+@media only screen and (max-height: 450px) and (max-width: 800px) {
+  .stripe {
+    height: 10vh;
+    margin-top: 2vh;
   }
 }
 
