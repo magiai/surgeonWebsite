@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+// automatic slider
+
     var myIndex = 0;
     slider();
 
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(slider, 6000);
     }
 
+// show and hide menu
 
     var hamburger = document.querySelector('.hamburger');
     var show = document.querySelector('.menuStripe');

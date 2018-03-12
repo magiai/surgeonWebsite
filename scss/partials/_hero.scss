@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
 }
+/************ hero picture *************/
 .mainPicture {
   margin-left: 14vw;
   width: 34vw;
@@ -13,14 +14,13 @@
   background-repeat: no-repeat;
   margin-top: 2vh;
 }
+/************ hero description **********/
 .mainDescription {
   margin-right: 12vw;
   width: 45vw;
   @include flexColumnAlignItemsCenter;
   justify-content: center;
-
 }
-
 .heroText {
   display: flex;
   flex-direction: column;
@@ -36,11 +36,19 @@
   font-size: 60px;
   margin-bottom: 2vh;
 }
-.heroSubtitle {
-  font-size: 45px;
-}
 .heroName {
   font-size: 35px;
+}
+/************ icons with text ********/
+.surgeryText {
+  @include flexColumnAlignItemsCenter;
+  margin-top: 5vh;
+  text-align: center;
+}
+.heroSurgery {
+  @include flexRowJustContCenter;
+  align-content: center;
+  margin-top: 1.5vh;
 }
 .heroSurgeryText {
   font-size: 30px;
@@ -48,18 +56,8 @@
   display: flex;
   align-items: center;
 }
-.surgeryText {
-  @include flexColumnAlignItemsCenter;
-  margin-top: 5vh;
-  text-align: center;
 
-}
-.heroSurgery {
-  @include flexRowJustContCenter;
-  align-content: center;
-  margin-top: 1.5vh;
-}
-
+/******************** media ******************/
 @media only screen and (max-width:1300px) {
   .hero {
     height: 55vh;
@@ -91,15 +89,15 @@
     margin-top: 3vh;
     margin-left: 7vw;
   }
-  .surgeryText {
-    margin-top: 1.5vh;
-  }
   .heroTitle {
     font-size: 35px;
     margin-bottom: 2vh;
   }
   .heroName {
     font-size: 25px;
+  }
+  .surgeryText {
+    margin-top: 1.5vh;
   }
   .heroSurgeryText {
     font-size: 17px;
@@ -109,6 +107,7 @@
     height: 6.5vh;
   }
 }
+
 @media only screen and (max-width:750px) {
   .heroText {
     margin-top: 11vh;
@@ -120,11 +119,13 @@
     font-size: 18px;
   }
 }
+
 @media only screen and (max-width: 620px) {
   .heroText {
     margin-top: 0vh;
   }
 }
+
 @media only screen and (max-width: 420px) {
   .hero {
     height: 20vh;

@@ -249,43 +249,19 @@ a:hover {
     height: 10vh;
   }
 }
+/************ media width: 420px *************/
 @media only screen and (max-width: 420px) {
   nav {
     height: 15vh;
   }
+  /******** logo and title **********/
   .logoStripe {
     height: 10vh;
     width: 70vw;
     margin-right: 0vw;
   }
-  .logoImage {
-    height: 7vh;
-    width: 8vw;
-  }
-  .menuStripe {
-    display: none;
-    border-style: none;
-  }
-  .menuStripe li {
-    font-size: 10px;
-  }
-  .hamburger {
-      display: block;
-      height: 2vh;
-      width: 6vw;
-      margin-right: 5vw;
-    margin-left: 5vw;
-    margin-bottom: 1vh;
-    margin-top: 4vh;
-  }
-  .hamburgerLine {
-    width: 6vw;
-    margin-bottom: 1vh;
-  }
-  .hamburger:hover {
-    .menuStripe {
-      display: block;
-    }
+  .logo {
+    width: 65vw;
   }
   .cabinet {
     font-size: 14px;
@@ -294,9 +270,32 @@ a:hover {
     font-size: 10px;
     margin-top: 2vh;
   }
-  .logo {
-    width: 65vw;
+  .logoImage {
+    height: 7vh;
+    width: 8vw;
   }
+  /******* hidden menu ********/
+  .menuStripe {
+    display: none;
+    border-style: none;
+  }
+  .menuStripe li {
+    font-size: 10px;
+  }
+  .hamburger {
+    display: block;
+    height: 2vh;
+    width: 6vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+    margin-top: 4vh;
+  }
+  .hamburgerLine {
+    width: 6vw;
+    margin-bottom: 1vh;
+  }
+
   .hiddenLogoText {
     margin-top: 2.5vh;
     margin-left: 1vw;
@@ -304,6 +303,8 @@ a:hover {
     width: 48vw;
   }
 }
+
+/************* stripe *************************/
 @media only screen and (max-height: 450px) and (max-width: 800px) {
   .stripe {
     height: 10vh;

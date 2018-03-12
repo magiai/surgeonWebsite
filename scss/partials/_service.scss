@@ -29,20 +29,19 @@
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   font-size: 20px;
-
 }
 .surgery {
   width: 35vw;
   height: 35vh;
   margin-bottom: 9vh;
-  font-weight: 550;
+  font-weight: 500;
 }
 .angiology {
   width: 35vw;
   height: 35vh;
   margin-bottom: 9vh;
   text-align: left;
-  font-weight: 550;
+  font-weight: 500;
 }
 .serviceList {
   margin-top: 2vh;
@@ -62,11 +61,13 @@
   font-size: 20px;
 }
 
+/*********** media ******************/
 @media only screen and (max-width:1300px) {
   .aboutService {
     height: 80vh;
   }
 }
+
 @media only screen and (max-width:1200px) {
 
   .screenIcon {
@@ -91,7 +92,6 @@
   }
   .containerService {
     border-style: none;
-
   }
   .screenIcon {
     margin-top: -75vh;
@@ -101,13 +101,12 @@
   }
   .surgery {
     margin-top: 1vh;
-
   }
   .angiology {
     margin-top: 1vh;
-
   }
 }
+
 @media only screen and (max-width: 680px) and (min-height: 450px) {
   .aboutService {
     display: flex;
@@ -162,8 +161,8 @@
     line-height: 1.6;
   }
 }
-@media only screen and (max-height: 450px) and (max-width: 800px) {
 
+@media only screen and (max-height: 450px) and (max-width: 800px) {
   .serviceList li {
     font-size: 13px;
   }
@@ -171,6 +170,7 @@
     font-size: 15px;
   }
 }
+
 @media only screen and (max-width: 410px) {
   .serviceList li {
     font-size: 12px;
@@ -188,6 +188,7 @@
     margin-top: -15vh;
   }
 }
+
 @media only screen and (max-height: 350px) and (max-width: 600px) {
   .aboutService {
     width: 100vw;
@@ -213,6 +214,7 @@
     font-size: 16px;
   }
 }
+
 @media only screen and (max-width: 360px) {
   .angiologyIcon {
     display: none;
@@ -224,10 +226,10 @@
     height: 153vh;
   }
 }
+
 @media only screen and (max-width: 300px) {
   .containerService {
     height: 63vh;
   }
-
 }
 

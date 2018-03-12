@@ -5,7 +5,7 @@
   @include mainContainerMargins;
   height: 50vh;
 }
-
+/******* doctor's description ****/
 .doctorTextContainer {
   display: flex;
   text-align: center;
@@ -21,15 +21,14 @@
   line-height: 2;
   font-size: 16px;
 }
-
 .doctorTextHead {
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 1.5vh;
   text-align: left;
 }
+/******** doctor's picture *****/
 .doctorPictureContainer {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +41,7 @@
   height: 360px;
 }
 
+/***************** media ********************/
 @media only screen and (max-width: 1024px) {
   .doctorTextHead {
     font-size: 20px;
@@ -69,6 +69,7 @@
     width: 55vw;
   }
 }
+
 @media only screen and (max-width: 680px) and (min-height: 450px) {
   .aboutDoctor {
     flex-direction: column;
@@ -120,14 +121,16 @@
     margin-right: 6vw;
   }
 }
+
 @media only screen and (max-width: 380px) {
   .aboutDoctor {
     height: 90vh;
   }
-  @media only screen and (max-width: 330px) {
-    .aboutDoctor {
-      width: 100%;
-      height: auto;
-    }
+}
+
+@media only screen and (max-width: 330px) {
+  .aboutDoctor {
+    width: 100vw;
+    height: auto;
   }
 }
